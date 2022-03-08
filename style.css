@@ -1,0 +1,180 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*
+adding All MY Section Tag Padding
+*/
+section {
+  padding: 80px;
+}
+
+/*Creating Banner Area in CSS*/
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: url(images/face2.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(0, 0, 0);
+
+  backface-visibility: hidden;
+}
+
+.banner h2 {
+  font-size: 2.5 em;
+  color: cornsilk;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.banner h2 span {
+  font-size: 2.5em;
+  color: rgb(214, 47, 47);
+}
+
+.banner h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.btn {
+  position: relative;
+  background: rgb(128, 0, 0);
+  display: inline-block;
+  color: black;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  background-blend-mode: black;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: red;
+}
+
+.heading p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.heading h2 {
+  font-size: 3em;
+  color: rgba(194, 44, 44, 0.4);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBx {
+  padding-left: 40px;
+  text-align: justify;
+}
+
+.proPic {
+  width: 350px;
+  height: 350px;
+}
+
+.contentBx h2 {
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.heading.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  flex-direction: row;
+  align-items: center;
+}
+
+.w50 {
+  min-width: 25%;
+}
+
+img {
+  max-width: 100%;
+  mix-blend-mode: hard-light;
+}
+
+.btn.round {
+  border-radius: 50px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  transition: 0.5s;
+}
+
+header .logo {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style-type: none;
+  justify-content: space-between;
+  position: relative;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.pic {
+  height: 75px;
+  width: 50px;
+  text-align: inherit;
+}
+
+header.sticky {
+  background-color: white;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgb(0, 0, 0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: black;
+}
