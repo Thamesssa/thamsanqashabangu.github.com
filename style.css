@@ -21,7 +21,7 @@ section {
   justify-content: space-between;
   align-items: center;
   background: rgb(0, 0, 0);
-  background: url(images/face2.jpg);
+  
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ section {
 
 .banner h2 span {
   font-size: 2.5em;
-  color: rgb(214, 47, 47);
+  color: #009e66;
 }
 
 .banner h3 {
@@ -51,7 +51,7 @@ section {
 
 .btn {
   position: relative;
-  background: rgb(128, 0, 0);
+  background: #009e66;
   display: inline-block;
   color: black;
   padding: 10px 30px;
@@ -65,7 +65,7 @@ section {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: red;
+  color: #009e66;
 }
 
 .heading p {
@@ -75,7 +75,7 @@ section {
 
 .heading h2 {
   font-size: 3em;
-  color: rgba(194, 44, 44, 0.4);
+  color: #009e66;
 }
 
 .content {
@@ -177,4 +177,39 @@ header.sticky {
 header.sticky .logo,
 header.sticky ul li a {
   color: black;
+}
+
+.services
+{
+  background: #111;
+}
+
+.heading .white p{
+  color: #fff;
+
+}
+
+.services .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.services .content .servicesBox{
+  color: white;
+  background: #161616;
+  margin: 10px 15px;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.services .content .servicesBox:hover{
+  border-bottom: 2px solid #009e66;
+  cursor: pointer;
+}
+
+.services .content .servicesBox .fa{
+  margin-bottom: 10px;
+  color: #009e66;
 }
