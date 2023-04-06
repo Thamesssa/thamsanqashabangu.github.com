@@ -88,10 +88,7 @@ section {
   text-align: justify;
 }
 
-.proPic {
-  width: 350px;
-  height: 350px;
-}
+
 
 .contentBx h2 {
   margin-bottom: 10px;
@@ -213,3 +210,51 @@ header.sticky ul li a {
   margin-bottom: 10px;
   color: #009e66;
 }
+
+.work .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  ;
+  
+}
+
+.work .content div{
+  
+  max-width: 500px;
+  padding: 5px;
+}
+
+.work .content div img{
+  max-width: 100%;
+  border: 1px solid rgb(0, 0, 0.4);
+}
+.work .content div a{
+  border: rebeccapurple;
+}
+
+.work .content div img:hover{
+  box-shadow:0 0 20px 5px #ccc;
+  transform:scale(1.008);
+  -webkit-transform:scale(1.008);
+  -moz-transform:scale(1.008);
+  -ms-transform:scale(1.008);
+  -o-transform:scale(1.008);
+  transition:0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition:0.5s;
+  -ms-transition:0.5s;
+  -o-transition:0.5s;
+   
+}
+
+.work .content div a:link,
+.work .content .workBx a:visited,
+.work .content .workBx a:active{
+    color:#161616;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
