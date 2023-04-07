@@ -1,3 +1,6 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
@@ -29,6 +32,7 @@ section {
   background-color: rgb(0, 0, 0);
 
   backface-visibility: hidden;
+  
 }
 
 .banner h2 {
@@ -103,9 +107,7 @@ section {
   align-items: center;
 }
 
-.w50 {
-  min-width: 25%;
-}
+
 
 img {
   max-width: 100%;
@@ -114,6 +116,7 @@ img {
 
 .btn.round {
   border-radius: 50px;
+  
 }
 
 header {
@@ -128,6 +131,7 @@ header {
   align-items: center;
   height: 80px;
   transition: 0.5s;
+  
 }
 
 header .logo {
@@ -256,5 +260,94 @@ header.sticky ul li a {
     font-weight: 600;
 }
 
+.navbar {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
+.navbar a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  text-decoration: vertical;
+
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }}
+  .typed_wrap {
+   
+    color: #ffffff;
+    
+    
+   
+    
+  }
+
+  .typed_wrap span {
+    justify-content: center;
+    color: #8bdbbf;
+  }
+  .typed::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  .typed-cursor{
+    opacity: 0;
+   display: none;
+ }
+ @keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 

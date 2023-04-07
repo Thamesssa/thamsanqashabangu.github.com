@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+   
 </head>
 <body>
     <!-- Creating Menu Tabs & Logo at Top Using HTML -->
     <header >
         
-    <a href="" src="" class="logo" alt="" class="pic" id="pic">Portfolio</a>
+    <a href="" src="" class="logo" alt="" class="pic" id="pic">Thamsanqa</a>
 <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -30,18 +33,21 @@
     <!-- Creating Banner Layout in HTML -->
     <section class="banner" id="home">
         <div class="textBox">
-            <h2>Hello I'm <br> <span>Thamsanqa Shabangu</span></h2>
-            <h3>Junior Front-End Web Developer </h3>
+            <h2><br> <span
+              >Thamsanqa Shabangu</span></h2>
+            
+                <h1 class="typed_wrap">  I'm a <span class="typed"></span></h1>
+             
             <a href="#about" class=" btn btn-secondary">ABOUT ME</a>
         </div>
     </section>
     <!-- Create about me layout -->
 <section class="about" id="about">
     <div class="heading">
-        <p>Get to know mw</p>
+        <p>Get to know me</p>
         <h2>About Me</h2>
     </div>
-    <div class="content">
+    <div class="slide-in content">
         <div class="w50">
             <img src="" alt="" class="proPic">
         </div>
@@ -66,41 +72,41 @@
 
     </div>
     </section>
-   <script src="ext.js" langauge="javascript"></script>
+  
 
    <section class="services" id="services">
-       <div class="heading white">
+       <div data-aos="zoom-out-up" data-aos-duration="500" class="heading white">
            <h2>Skills</h2>
            <p>Services I Offer to my Clients</p>
        </div>
-       <div class="content">
-           <div class="servicesBox">
+       <div  class=" content" >
+           <div data-aos="fade-down-right" data-aos-duration="800" class="servicesBox">
             <i class="fa fa-brands fa-css3-alt fa-beat fa-4x"></i>
             <h3>Web Desing CSS</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
            </div>
-           <div class="servicesBox">
+           <div data-aos="fade-down-left" data-aos-duration="800" class="servicesBox">
             <i class=" fa fas fa-brain  fa-beat fa-4x"></i>
                <h3>AI</h3>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
            </div>
-           <div class="servicesBox">
+           <div data-aos="fade-right" data-aos-duration="500" class="servicesBox">
             <i class="fa fa-regular fa-beat fa-4x fa-solid fa-robot"></i>
                <h3>Machine Learning</h3>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
            </div>
-           <div class="servicesBox">
+           <div data-aos="fade-left" data-aos-duration="500" class="servicesBox">
             <i class="fa  fa-c fa-beat fa-4x" ></i>
                <h3>Cpp</h3>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
            </div>
-           <div class="servicesBox">
-            <i class="fa fa-brands fa-java fa-beat fa-4x"></i>
+           <div data-aos="fade-up-right" data-aos-duration="500" class="servicesBox">
+            <i  class=" fa fa-brands fa-java fa-beat fa-4x"></i>
                <h3>Java</h3>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
            </div>
-           <div class="servicesBox">
-            <i class=" fa fa-laptop-code fa-4x"></i>
+           <div data-aos="fade-up-left" data-aos-duration="500" class="servicesBox">
+            <i class=" fa-beat fa fa-laptop-code fa-4x"></i>
                <h3>Web Development</h3>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
            </div>
@@ -113,61 +119,66 @@
         <p>Showcasing some of my work</p>
     </div>
     <div class="content">
-        <div class="card" style="width: 18rem;">
-            <img class=" fa card-img-top" src="images/face1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-              
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class=" btn btn-secondary ">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-secondary">Go somewhere</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/face2.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class=" card" style="width: 18rem;">
-            <img class="card-img-top" src="images/face3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/face3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/face3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/face3.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+          <div class="row">
+  <div class="col-sm-6">
+    <div data-aos="fade" class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
         <div class="heading">
             <a href="" target="_blank">View All my Projects</a>
         </div>
     </div>
    </section>
+   <section>
+    <div class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+   </section>
+   <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+   <script src="vendor/aos/aos.js"></script>
+   <script src="ext.js" langauge="javascript"></script>
+ 
+   
 
+   
 </body>
 </html>
 
