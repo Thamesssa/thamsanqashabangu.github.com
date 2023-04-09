@@ -4,16 +4,7 @@ AOS.init({
   easing: 'ease-in-sine',
   delay: 100,
 });
-
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky",window.scrollY >0);
-});
-
-
-
-
-     var typed = new Typed('.typed', {
+      var typed = new Typed('.typed', {
       strings: ["Developer.", "Designer.", "Full Stack Developer.","Web Developer", "Computing Student."],
       typeSpeed: 80,
       backSpeed: 70,
