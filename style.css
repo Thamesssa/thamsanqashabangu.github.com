@@ -15,44 +15,31 @@ adding All MY Section Tag Padding
 section {
   padding: 80px;
 }
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 70px;
-  height: 100%;
- 
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-.menu div {
-  margin: 10px 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(122, 73, 73);
-  transition: background-color 0.3s ease;
-
-}
 
 
-.sidebar a i:hover{
-  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
-  border: 3px solid #00d7c3;
-  border-radius: 50%;
-}
+
 
 /* Style the main content */
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   padding: 0px 10px;
+}
+.headerSocials
+{
+  display: flex;
+  margin-top: 25px; 
+  flex-direction:row;
+  letter-spacing: 15px;
+}
+
+
+  
+.headerSocials .fa{
+  color:#009e66;
+  font-size: 30px;
+  cursor:pointer;
+
+  
 }
 
 
@@ -68,79 +55,63 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #221a1a;
+  background-color: black;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-position: right;
-  padding-left: 100px;
+  padding-left: 200px;
   backface-visibility: hidden;
   
 }
-
-.banner h2 {
-  font-size: 2.5 em;
-  color: rgb(247, 244, 244);
-  font-weight: 300;
-  line-height: 2em;
+#Im{
+  color: #009e66;
 }
 
 .banner h2 span {
-  font-size: 2.5em;
-  color: #e8ebea;
-  left: 50%;
+  font-size: 70px;
+  color: #009e66;
+  font-weight: 500px;
+  
 }
 
-.banner h3 {
- 
-  font-size: 1.8em;
-  font-weight: 500;
-}
 
-.btn {
-  position: relative;
-  background: #009e66;
-  display: inline-block;
-  color: black;
-  padding: 10px 30px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 18px;
-  background-blend-mode: black;
-}
+
 
 .heading {
   width: 100%;
   text-align: center;
+ 
   margin-bottom: 30px;
   color: #009e66;
 }
 
-.heading p {
-  font-style: italic;
-  font-size: 14px;
-}
+
 
 .heading h2 {
   font-size: 3em;
   color: #009e66;
+  left: 100%;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
+   
 }
 
 .contentBx {
-  padding-left: 40px;
+  padding-left: 100px;
   text-align: justify;
+  color: #009e66;
+  
 }
 
 
 
 .contentBx h2 {
   margin-bottom: 10px;
-  color: rgb(0, 0, 0);
+  color: #009e66;
 }
 
 .heading.bottom {
@@ -151,26 +122,15 @@ section {
   align-items: center;
 }
 
-
-
-img {
-  max-width: 100%;
-  mix-blend-mode: hard-light;
-}
-
 .btn.round {
   border-radius: 50px;
-  
+ background-color: #009e66;
 }
 
 /* Style the vertical navbar */
 
 
-.pic {
-  height: 75px;
-  width: 50px;
-  text-align: inherit;
-}
+
 
 .services
 {
@@ -178,7 +138,7 @@ img {
 }
 
 .heading .white p{
-  color: #fff;
+  color: #009e66;
 
 }
 
@@ -479,14 +439,180 @@ img {
 	}
 }
 
+.container {
+  position: fixed;
+  left: 0;
+  top: 20%;
+  z-index: 999;
+  width: 600px; /* adjust as needed */
+  justify-content: space-between; /* distribute circles evenly */
+}
 
+.circle {
+  display: flex;
+  margin: 10px 0;
+  width: 56px;
+  height: 56px;
+  left: 10px;
+  border-radius: 100%;
+  background-color: #42dba6;
+  position: relative; /* add position relative to allow absolute positioning of label */
+}
 
+.circle:hover {
+  display: flex;
+  width: 100px;
+  border-radius: 100px;
+  background-color: #009e66;
+}
 
+.circle i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
 
+.circle:hover i {
+  left:28%;
+  justify-content: flex;
 
+}
 
+.label {
+  
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  color: aliceblue; /* move color to this rule to apply to all labels */
+  text-decoration: none;
+}
 
+.circle:hover .label {
+  opacity: 1;
+}
 
+/* Creating Contact Details Layout in CSS */
+.contact{
+    background:#111;
+}
 
+.formBx{
+    min-width:50%;
+}
+.formBx form{
+    display:flex;
+    flex-direction:column;
+}
+.formBx form h3,
+.contactInfo h3{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea{
+    margin-bottom: 20px;
+    padding:15px;
+    font-size: 16px;
+    background:transparent;
+    border:none;
+    outline:none;
+    background:#161616;
+    resize:vertical;
+    color:#fff;
+}
+.formBx form input:focus,
+.formBx form textarea:focus{
+    transition:0.5s;
+    -webkit-transition:0.5s;
+    -moz-transition:0.5s;
+    -ms-transition:0.5s;
+    -o-transition:0.5s;
+    border-bottom:1px solid #009e66;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+    color:#999;
+}
+.formBx form input[type="submit"]{
+    background:#009e66;
+    max-width:250px;
+    cursor:pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.contactInfo{
+    min-width:40%;
+    margin-left: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
     
-
+}
+.contactInfo p{
+    color:#999;
+}
+.contactInfoBx{
+    position:relative;
+  
+    align-content: center;
+   
+}
+.contactInfoBx .box{
+    position:relative;
+    padding:20px;
+    display:flex;
+}
+.contactInfoBx .box .icon{
+    color:#fff;
+    min-width:40px;
+    padding-top:4px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .box .text{
+    color:#999;
+    margin-left:20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3{
+    font-weight: 500;
+    color:#009e66;
+    margin-bottom: 0;
+}
+.contactInfoBx .box .text p{
+    font-weight: 300;
+    color:#999;
+}
+.contactInfoBx .boxSocial{
+    display:flex;
+    flex-direction:row;
+    letter-spacing: 15px;
+    
+}
+.contactInfoBx .boxSocial .fa{
+    color:#009e66;
+    font-size: 42px;
+    cursor:pointer;
+    
+}
+footer.copyright{
+    background:#000;
+    color:#fff;
+    text-align: center;
+}
